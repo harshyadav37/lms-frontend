@@ -68,7 +68,7 @@ const Navbar = () => {
                   <DropdownMenuItem onClick={() => router.push("/student/my-learning")}>
                     My Learning
                   </DropdownMenuItem>
-                  <DropdownMenuItem>Edit Profile</DropdownMenuItem>
+                  <DropdownMenuItem onClick={() => router.push("/student/profile")}>Edit Profile</DropdownMenuItem>
                 </DropdownMenuGroup>
                 {/* <DropdownMenuSeparator /> */}
                 <DropdownMenuItem> <button
