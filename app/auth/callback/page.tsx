@@ -14,7 +14,7 @@ export default function AuthCallbackPage() {
 
     async function loadUser() {
       try {
-        const response = await api.get("/auth/me");
+        const response = await api.get("/auth/userprofile");
 
         if (cancelled) return;
 
@@ -48,7 +48,7 @@ export default function AuthCallbackPage() {
           <>
             <p className="text-red-400">{error}</p>
             <button
-              onClick={() => router.replace("/login")}
+              onClick={() => router.replace("/auth/login")}
               className="mt-4 rounded-lg bg-blue-600 px-5 py-2"
             >
               Back to login
